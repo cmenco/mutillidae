@@ -1,13 +1,5 @@
 <div class="page-title">Setting up Virtual Hosts in Apache2 on Ubuntu</div>
 
-<?php include_once (__ROOT__.'/includes/back-button.inc');?>
-
-<?php 
-        $lHostname = $_SERVER["SERVER_NAME"];
-        $lHomepage = str_replace($_SERVER["CONTEXT_DOCUMENT_ROOT"], "", $_SERVER["SCRIPT_FILENAME"]) . "?page=home.php";
-        $lHomepageURL = "https://" . $lHostname . $lHomepage
-?>
-<a href="<?php echo $lHomepageURL; ?>"><?php echo $lHomepageURL; ?></a>
 <div>&nbsp;</div>
 <span class="report-header">Creating Virtual Hosts</span>
 <div>&nbsp;</div>
