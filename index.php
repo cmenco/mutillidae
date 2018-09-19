@@ -413,15 +413,23 @@
    			
    			/* Built-in user-agent defenses */
    			header("X-XSS-Protection: 0", TRUE);
+   			
+   			/* Disable HSTS */
+   			header("Strict-Transport-Security: max-age=0", TRUE);
+   			
    		break;
+   		
    		case "1":
+   		    /* Cross-frame scripting and click-jacking */
+   		    $lIncludeFrameBustingJavaScript = TRUE;
    		    
    		    /* Built-in user-agent defenses */
    		    header("X-XSS-Protection: 0", TRUE);
    		    
-   		    /* Cross-frame scripting and click-jacking */
-			$lIncludeFrameBustingJavaScript = TRUE;	
-   		break;
+			/* Disable HSTS */
+			header("Strict-Transport-Security: max-age=0", TRUE);
+			
+		break;
 
    		case "2":
    		case "3":
@@ -468,6 +476,9 @@
    			
    			/* Built-in user-agent defenses */
    			header("X-XSS-Protection: 1", TRUE);
+
+   			/* Enable HSTS */
+   			//header("Strict-Transport-Security: max-age=31536000; includeSubDomains", TRUE);
    			
    			/* Server version banners */
    			try{

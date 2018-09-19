@@ -26,6 +26,20 @@
 </span>
 </div>
 
+<!-- TEMPORARY WARNING ABOUT MUTILLIDAE HAVING A NEW PASSWORD IN MYSQL -->
+<link rel="stylesheet" type="text/css" href="styles/gritter/jquery.gritter.css" />
+<script type="text/javascript" src="javascript/gritter/jquery.gritter.min.js"></script>
+<script>
+$.gritter.add({
+    // (string | mandatory) the heading of the notification
+    title: 'IMPORTANT',
+    // (string | mandatory) the text inside the notification
+    text: 'Please be aware of recent update. MySQL will not accept blank passwords in recent versions. This project now tries to connect to MySQL using password of "mutillidae". Please ensure the password for the root account in MySQL is set to the password configured in	Mutillidae&apos;s database configuration file includes/database-config.php. To learn how to reset root password in MySQL, please refer to https://www.youtube.com/watch?v=sG5Z4JqhRx8',
+    // time until fade begins
+    time: 15000
+});
+</script>
+
 <table style="margin:0px;margin-top:5px;">
  	<tr>
 	    <td>

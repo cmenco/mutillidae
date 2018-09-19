@@ -54,7 +54,7 @@
 					<ul>
 						<li>mysql -u root</li>
 						<li>use mysql;</li>
-						<li>update user set authentication_string=PASSWORD('') where user='root';</li>
+						<li>update user set authentication_string=PASSWORD('mutillidae') where user='root';</li>
 						<li>update user set plugin='mysql_native_password' where user='root';</li>
 						<li>flush privileges;</li>
 						<li>quit;</li>

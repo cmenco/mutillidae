@@ -5,7 +5,8 @@ class RequiredSoftwareHandler {
 	private $mSecurityLevel = 0;
 	private $mPHPCurlIsInstalled = false;
 	private $mPHPJSONIsInstalled = false;
-
+	private $mPHPXMLIsInstalled = false;
+	
 	/* --------------------------------
 	 *  private methods
 	* --------------------------------*/	
@@ -25,10 +26,14 @@ class RequiredSoftwareHandler {
 		}// end switch
 	}// end function doSetSecurityLevel()
 
-	private function doPHPphpCurlIsInstalled(){
-		return function_exists("curl_init");
-	}// end function doPHPphpCurlIsInstalled
+	private function doPHPXMLIsInstalled(){
+		return function_exists("simplexml_load_file");
+	}// end function doPHPXMLIsInstalled
 
+	private function doPHPCurlIsInstalled(){
+	    return function_exists("curl_init");
+	}// end function doPHPCurlIsInstalled
+	
 	private function doPHPJSONIsInstalled(){
 		return function_exists("json_encode");
 	}// end function doPHPJSONIsInstalled
@@ -40,8 +45,9 @@ class RequiredSoftwareHandler {
 	/* constructor */
 	public function __construct($pPathToESAPI, $pSecurityLevel){
 		$this->doSetSecurityLevel($pSecurityLevel);
-		$this->mPHPCurlIsInstalled = $this->doPHPphpCurlIsInstalled();
+		$this->mPHPCurlIsInstalled = $this->doPHPCurlIsInstalled();
 		$this->mPHPJSONIsInstalled = $this->doPHPJSONIsInstalled();
+		$this->mPHPXMLIsInstalled = $this->doPHPXMLIsInstalled();
 	}// end function __construct
 
 	public function setSecurityLevel($pSecurityLevel){
@@ -52,14 +58,38 @@ class RequiredSoftwareHandler {
 		return $this->mSecurityLevel;
 	}// end function
 	
+	public function isPHPXMLIsInstalled(){
+	    return $this->isPHPXMLIsInstalled;
+	}// end function isPHPXMLIsInstalled()
+	
 	public function isPHPCurlIsInstalled(){
-		return $this->mPHPCurlIsInstalled;
+	    return $this->mPHPCurlIsInstalled;
 	}// end function isPHPCurlIsInstalled()
-
+	
 	public function isPHPJSONIsInstalled(){
 		return $this->mPHPJSONIsInstalled;
 	}// end function isPHPJSONIsInstalled()
 
+	public function getNoXMLAdviceBasedOnOperatingSystem(){
+	    $lOperatingSystemAdvice = "";
+	    $lHTML = "";
+	    
+	    switch (PHP_OS){
+	        case "Linux":
+	            $lOperatingSystemAdvice = "The server operating system seems to be Linux. You may be able to install with sudo apt-get install php5-xml";
+	            break;
+	        case "WIN32":
+	        case "WINNT":
+	        case "Windows":
+	            $lOperatingSystemAdvice = "The server operating system seems to be Windows. Ensure the PHP-XML module is installed and activated.";
+	            break;
+	        default: $lOperatingSystemAdvice = ""; break;
+	    }// end switch
+	    
+	    $lHTML = '<br/><span style="background-color: #ffff99;">Warning: Detected PHP XML is not installed on the server. This will cause issues with pages and services that use the extention. '.$lOperatingSystemAdvice.'</span><br/><br/>';
+	    return $lHTML;
+	}// end function getNoXMLAdviceBasedOnOperatingSystem
+	
 	public function getNoCurlAdviceBasedOnOperatingSystem(){
 		$lOperatingSystemAdvice = "";
 		$lHTML = "";

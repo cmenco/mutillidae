@@ -84,8 +84,8 @@
 	</div>
 	<div style="margin:20px">
 		ix.	By default, Mutillidae tries to connect to MySQL on the localhost with the username 
-		"root" and a blank password. To change this, edit "config.inc" with the correct 
-		information for your environment.
+		"root" and a password of "mutillidae". To change this, edit "includes/database-config.php" 
+		with the correct information for your environment.
 	</div>
 	<div style="margin:20px">
 		x.	NOTE: Once PHP 6.0 arrives in XAMPP, E_ALL will include E_STRICT so the line 
