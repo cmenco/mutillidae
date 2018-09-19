@@ -16,7 +16,7 @@ You may want to give mutillidae a hostname so it can be accessed more easily.
 For example, the following command would create a hostname that can stand in for
 the IP address 127.0.0.1
 
-echo -e "\n127.0.0.1\tmutillidae.local" > /etc/hosts
+echo -e "\n127.0.0.1\tmutillidae.local" &gt;&gt; /etc/hosts
 
 Then the site could be access at http://127.0.0.1<?php echo $lHomepage; ?> or 
 http://mutillidae.local<?php echo $lHomepage; ?>
