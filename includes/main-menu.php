@@ -733,7 +733,9 @@
 			<a href="">Documentation</a>
 			<ul>
 				<li><a href="index.php?page=documentation/usage-instructions.php">Usage Instructions</a></li>
-				<li><a href="index.php?page=documentation/setting-up-ssl.php">Setting Up SSL</a></li>
+				<li><a href="index.php?page=documentation/setting-up-ssl.php">Setting Up HTTPS</a></li>
+				<li><a href="index.php?page=documentation/setting-up-virtual-hosts.php">Setting Up Virtual Hosts</a></li>
+				<li><a href="index.php?page=documentation/setting-up-local-hostname.php">Setting Up Local Hostname</a></li>
 				<li><a href="index.php?page=documentation/change-log.html">Change Log</a></li>
 				<li><a href="index.php?page=credits.php">Credits</a></li>
 				<li>

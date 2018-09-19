@@ -42,13 +42,13 @@ sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-availab
 <pre>
 sudo nano /etc/apache2/sites-available/default-ssl.conf
 
-                #   A self-signed (snakeoil) certificate can be created by installing
-                #   the ssl-cert package. See
-                #   /usr/share/doc/apache2/README.Debian.gz for more info.
-                #   If both key and certificate are stored in the same file, only the
-                #   SSLCertificateFile directive is needed.
-                SSLCertificateFile      /etc/ssl/certs/mutillidae-selfsigned.crt
-                SSLCertificateKeyFile /etc/ssl/private/mutillidae-selfsigned.key
+    #   A self-signed (snakeoil) certificate can be created by installing
+    #   the ssl-cert package. See
+    #   /usr/share/doc/apache2/README.Debian.gz for more info.
+    #   If both key and certificate are stored in the same file, only the
+    #   SSLCertificateFile directive is needed.
+    SSLCertificateFile      /etc/ssl/certs/mutillidae-selfsigned.crt
+    SSLCertificateKeyFile /etc/ssl/private/mutillidae-selfsigned.key
 </pre>
 
 <div>&nbsp;</div>
@@ -85,7 +85,6 @@ sudo service apache2 restart
 <span class="report-header">Test the site by browsing to the homepage over HTTPS</span>
 <div>&nbsp;</div>
 <pre>
-# Note: Because the certficate is self-signed, it is not trusted. Firefox may show a warning as result
+Note: Because the certficate is self-signed, it is not trusted. Firefox will show an 
+"Untrusted Certificate" warning as result
 </pre>
-<a href="https://localhost/mutillidae/index.php?page=home.php">https://localhost/mutillidae/index.php?page=home.php</a>
-<div>&nbsp;</div>

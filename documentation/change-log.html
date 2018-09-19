@@ -13,15 +13,16 @@ TODO: Make these videos: buffer overflows, xml entity expansion
 <blockquote>
 	<div>Change Log for OWASP Mutillidae II 2.6.63:</div>
 	<ul>
-		<li>Updated for Raspberry Pi 3 B+, Ubuntu 18.04, PHP 7.2 and MariaDB MySQL 5.7</li>
+		<li>Updated project for Raspberry Pi 3 B+, Ubuntu 18.04, PHP 7.2 and MariaDB MySQL 5.7</li>
 		<li>Changed root database password to "mutillidae". MySQL will not accept blank password
 		in latest versions. This is a big change for a lot of users of Mutillidae.</li>
 		<li>An attempt has been made to lessen the impact of the new database password. The database
 		connection will try all old and new passwords that Mutillidae has ever used in hopes one of them
-		work for the user.
+		work for the user. This will help new users as much as possible.
 		</li>
 		<li>Added HSTS header removal code when the project is set to Security Level 0 and 1</li>
 		<li>BUG FIX: Fixed mispelling in RequiredSoftwareHandler</li>
+		<li>Added new documentation pages for virtual hosts and local hostnames</li>
 	</ul>
 </blockquote>
 
