@@ -4,10 +4,9 @@
 <span class="report-header">Creating Virtual Hosts</span>
 <div>&nbsp;</div>
 <pre>
-This method causes Apache to serve the site over HTTPS only but virtual hosts can be used to allow 
-both HTTP and HTTPS sites for the same application. An example of a possible configuration is below. 
-This example limits mutillidae to running on localhost only at IP address 127.0.0.1 on standard ports 
-80 and 443 respectively.
+Virtual hosts can be used to allow both HTTP and HTTPS sites for the same application. 
+An example of a possible configuration is below. This example limits mutillidae to running 
+on localhost only at IP address 127.0.0.1 on standard ports 80 and 443 respectively.
 
 &#x3C;VirtualHost 127.0.0.1:80&#x3E;
 &#x9;ServerName mutillidae.local

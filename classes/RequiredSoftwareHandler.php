@@ -96,8 +96,8 @@ class RequiredSoftwareHandler {
 		
 		switch (PHP_OS){
 			case "Linux":
-				$lOperatingSystemAdvice = "The server operating system seems to be Linux. You may be able to install with sudo apt-get install php5-curl";
-				break;
+			    $lOperatingSystemAdvice = "The server operating system seems to be Linux. You may be able to install with sudo apt-get install php[verion]-curl where [version] is the version of PHP installed. For example, apt-get install php7.2-curl if PHP 7.2 is installed.";
+			    break;
 			case "WIN32":
 			case "WINNT":
 			case "Windows":
