@@ -6,6 +6,8 @@
 			without being encoded into the web server response with a style attribute.
 			In other words, the attacker
 			can send input which later is incorporated into the web page the user receives.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>
@@ -30,7 +32,7 @@
 			<br/><br/>
 			Possible Solution:<span class="label">style="&lt;body color:#"<span style="color:red;">"&gt;&lt;H1&gt;HELLO WORLD&lt;/H1&gt;&lt;</span> anything="</span>"&gt;
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->InjectingaCrossSiteScriptviaCascadingStylesheetContext);?>
 			<br/><br/>

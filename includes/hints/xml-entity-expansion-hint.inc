@@ -4,6 +4,8 @@
 			XML entity expansion attacks recursively include ever exapnding payloads
 			to tie up system resources on the web application server. The attack is
 			a type of Denial of Service (DOS).
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>

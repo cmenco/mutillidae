@@ -10,6 +10,8 @@
 			demonstrations such as popping up an alert box do not help in these cases. The 
 			Browser Exploitation Framework (BeEF) allows remote control of injected browser
 			making demonstration easy, effective and convincing.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Starting BeEF</span>
 			<br/><br/>
@@ -69,7 +71,7 @@
 				in the "Module Result History" tab</li>
 			</ul>
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->IntroductiontotheBrowserExploitationFramework);?>
 			<br/><br/>

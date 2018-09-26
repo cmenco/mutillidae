@@ -5,6 +5,8 @@ Without a properly configured HTTPS connection from the web server
 to the client, traffic traveling over the HTTP protocol can be 
 interecepted with packet sniffers.
 <br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
+<br/><br/>
 <span class="report-header">Discovery Methodology</span>
 <br/><br/>
 Use the application noting if pages are available over HTTP. Also, check

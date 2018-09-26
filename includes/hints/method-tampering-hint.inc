@@ -8,6 +8,8 @@ cause parameter pollusion, a user can send parameters via POST which the develop
 thinks should be passed via the URL. The user could also pass a variable using both
 GET and POST. The application can be tricked by the bogus parameters.
 <br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
+<br/><br/>
 <span class="report-header">Discovery Methodology</span>
 <br/><br/>
 Determine parameters needed for a valid request. If the page submits requests
@@ -19,7 +21,7 @@ Reverse GET requests as well.
 Method tampering can help with filter bypass and make cross site request
 forgery easier.
 <br/><br/>
-<span class="report-header">Videos</span>
+<span id="videos" class="report-header">Videos</span>
 <br/><br/>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->DetermineHTTPMethodsusingNetcat);?>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtolistHTTPMethodswithCURL);?>

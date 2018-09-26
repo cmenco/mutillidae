@@ -3,6 +3,8 @@
 			<br/><br/>
 			Secret Administrative Pages are surprisingly common. Developers assume that it
 			is not possible to determine the URL so the pages are secure.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>
@@ -23,7 +25,7 @@
 	  		The phpinfo function dumps PHP server configuration information to a nice table.
 			The phpMyAdmin.php hosts a secret phpMyAdmin console.
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->MutillidaeHowtoShowSecretPageinSecurityLevel5);?>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->BruteForcePageNamesusingBurpSuiteIntruder);?>

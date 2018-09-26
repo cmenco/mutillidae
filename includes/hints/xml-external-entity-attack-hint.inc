@@ -5,6 +5,8 @@
 			an input parameter to be XML or incorporated into XML
 			which is passed to an XML parser running with sufficient
 			privileges to include external or system files.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>
@@ -159,7 +161,7 @@
 &lt;?xml version=&quot;1.0&quot;?&gt;&lt;change-log&gt;&lt;text&gt;&amp;lt;script&amp;gt;alert(&amp;quot;Hello World&amp;quot;)&amp;lt;/script&amp;gt;&lt;/text&gt;&lt;/change-log&gt;
 </code>	
 		<br/><br/>
-		<span class="report-header">Videos</span>
+		<span id="videos" class="report-header">Videos</span>
 		<br/><br/>
 		<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->IntroductiontoXMLExternalEntityInjection);?>
 		<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->ISSAIntroductiontoXMLExternalEntityInjection);?>

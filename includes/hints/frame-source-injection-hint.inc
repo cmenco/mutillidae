@@ -5,6 +5,8 @@ Frame Source Injection may occcur when the src attribute of a frame or
 iframe is determined by a parameter sent by the client. In this case the
 client can send an unintended URI which may be displayed in the frame. 
 <br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
+<br/><br/>
 <span class="report-header">Discovery Methodology</span>
 <br/><br/>
 Inject canaries into each available parameter and cookie. Observe if any
@@ -17,7 +19,7 @@ generate correct syntax. For example, inject http://google.com into the SRC
 attribute of a frame element, then check if Google home page is displayed
 in the frame.
 <br/><br/>
-<span class="report-header">Videos</span>
+<span id="videos" class="report-header">Videos</span>
 <br/><br/>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->IntroductiontoFrameSourceInjection);?>
 <br/><br/>

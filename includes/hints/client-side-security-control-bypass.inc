@@ -14,6 +14,8 @@
 			<br/><br/>
 			However applications depending solely on client-side controls are
 			often vulnerable to injection and/or attacks on application logic.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology (Static source-code analysis)</span>
 			<br/><br/>
@@ -173,7 +175,7 @@
 			 a "valid" request/response pair using an interception proxy such as Burp-Suite. By this time
 			 any JavaScript has already run and can be ignored entirely.
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->IntroductiontolocatingReflectedCrosssiteScripting);?>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->IntroductiontoHTMLInjectionHTMLiandCrossSiteScriptingXSSUsingMutillidae);?>

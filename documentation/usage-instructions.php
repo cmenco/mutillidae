@@ -1,3 +1,60 @@
+<?php 
+
+	try{
+		/* ------------------------------------------
+		 * Constants used in application
+		* ------------------------------------------ */
+		require_once ('./includes/constants.php');
+
+		/* We use the session on this page */
+		if (!isset($_SESSION["security-level"])){
+			session_start();
+			$_SESSION["security-level"] = 0;
+		}// end if
+
+		/* ------------------------------------------
+		 * initialize custom error handler
+		* ------------------------------------------ */
+		require_once (__ROOT__.'/classes/CustomErrorHandler.php');
+		if (!isset($CustomErrorHandler)){
+			$CustomErrorHandler =
+			new CustomErrorHandler(__ROOT__.'/owasp-esapi-php/src/', $_SESSION["security-level"]);
+		}// end if
+
+		/* ------------------------------------------
+		 * initialize SQL Query Handler
+		* ------------------------------------------ */
+		require_once (__ROOT__.'/classes/SQLQueryHandler.php');
+		$SQLQueryHandler = new SQLQueryHandler(__ROOT__."/owasp-esapi-php/src/", $_SESSION["security-level"]);
+		
+		/* ------------------------------------------
+		 * initialize You Tube Video Handler Handler
+		* ------------------------------------------ */
+		require_once (__ROOT__.'/classes/YouTubeVideoHandler.php');
+		$YouTubeVideoHandler = new YouTubeVideoHandler("owasp-esapi-php/src/", $_SESSION["security-level"]);
+  	 
+		if (isset($_REQUEST["level1HintIncludeFile"])) {
+			$lIncludeFileKey = $_REQUEST["level1HintIncludeFile"];
+		}else{
+			$lIncludeFileKey = 52; // hints-not-found.inc;
+		}// end if
+		
+		$lIncludeFileRecord = $SQLQueryHandler->getLevelOneHelpIncludeFile($lIncludeFileKey);
+		
+		if ($SQLQueryHandler->affected_rows()>0) {
+			$lRecord = $lIncludeFileRecord->fetch_object();
+			$lIncludeFile = $lRecord->level_1_help_include_file;
+			$lIncludeFileDescription = $lRecord->level_1_help_include_file_description;
+		}else{
+			$lIncludeFile = 'hint-not-found.inc';
+			$lIncludeFileDescription = 'Hint Not Found';
+		}// end if
+					
+   	} catch (Exception $e) {
+		echo $CustomErrorHandler->FormatError($e, $lQueryString);
+   	}// end try;
+?>
+
 <div class="page-title">Usage Instructions</div>
 
 <?php include_once (__ROOT__.'/includes/back-button.inc');?>
@@ -10,6 +67,13 @@
 			2013, 2010 and 2007 in PHP.
 			Additionally vulnerabilities from the SANS Top 25 Programming Errors and select information 
 			disclosure vulnerabilities have been added on various pages. 
+			<br/><br/><br/>
+			<span class="report-header">Optional Configuration</span>
+			<br/><br/>
+			Instructional videos are available to help set up an HTTPS TLS certificate or Apache virtual hosts
+			<br/>
+			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoCreateSelfSignedCertificateinApache);?>
+			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoCreateVirtualHostsinApache);?>
 			<br/><br/><br/>
 			<span class="report-header">Top Menu Bar</span>
 			<br/><br/>
@@ -35,7 +99,7 @@
 			is available in menu under documentation or by clicking 
 			<a title="Listing of vulnerabilities" href="./index.php?page=./documentation/vulnerabilities.php">here</a>.
 			<br/><br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
 			The videos on the Webpwnized YouTube Channel are likely to be a some assistance. Videos 
 			cover installation, using tools like Burp-Suite and exploits for various

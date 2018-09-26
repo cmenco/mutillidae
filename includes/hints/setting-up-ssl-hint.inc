@@ -1,10 +1,13 @@
-<div class="page-title">Setting up SSL on Ubuntu</div>
-
-<?php include_once (__ROOT__.'/includes/back-button.inc');?>
-
-<div>&nbsp;</div>
+<br/><br/>
+<span class="report-header">Overview</span>
+<br/><br/>
+While not appropriate for production environments, self-signed certificates work well for providing HTTPS in 
+isolated lab environments; especially those running only locally
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
+<br/><br/>
 <span class="report-header">Creating a self-signed certificate for localhost</span>
-<div>&nbsp;</div>
+<br/><br/>
 <pre>
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/mutillidae-selfsigned.key -out /etc/ssl/certs/mutillidae-selfsigned.crt
 
@@ -88,3 +91,8 @@ sudo service apache2 restart
 Note: Because the certficate is self-signed, it is not trusted. Firefox will show an 
 "Untrusted Certificate" warning as result
 </pre>
+<br/>
+<span id="videos" class="report-header">Videos</span>
+<br/>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoCreateSelfSignedCertificateinApache);?>
+<br/><br/>

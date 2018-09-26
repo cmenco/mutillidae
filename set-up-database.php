@@ -330,6 +330,9 @@ try{
 			('home.php', 57, 1),
 			('home.php', 56, 1),
 			('home.php', 59, 1),
+			('home.php', 60, 1),
+			('home.php', 61, 1),
+			('home.php', 62, 1),
 			('add-to-your-blog.php', 8, 0),
 			('add-to-your-blog.php', 10, 2),
 			('add-to-your-blog.php', 53, 2),
@@ -434,6 +437,7 @@ try{
 			('login.php', 54, 1),
 			('login.php', 56, 1),
 			('login.php', 59, 1),
+			('login.php', 60, 1),
 			('password-generator.php', 1, 1),
 			('password-generator.php', 11, 3),
 			('password-generator.php', 55, 3),
@@ -529,6 +533,7 @@ try{
 			('ssl-misconfiguration.php', 1, 1),
 			('ssl-misconfiguration.php', 56, 1),
 			('ssl-misconfiguration.php', 59, 1),
+			('ssl-misconfiguration.php', 60, 1),
 			('text-file-viewer.php', 11, 3),
 			('text-file-viewer.php', 55, 3),
 			('text-file-viewer.php', 12, 1),
@@ -687,6 +692,9 @@ try{
 		(57, 'Client-side Comments', 'client-side-comments.inc'),
 		(58, 'XML Entity Expansion', 'xml-entity-expansion-hint.inc'),
 		(59, 'Using OWASP Zed Attack Proxy (ZAP)', 'owasp-zap-hint.inc'),
+		(60, 'Set Up HTTPS Self-signed Certificate', 'setting-up-ssl-hint.inc'),
+		(61, 'Set Up Apache Virtual Hosts', 'setting-up-virtual-hosts-hint.inc'),
+		(62, 'Set Up Local Hostnames', 'setting-up-local-hostnames-hint.inc'),
 		(99, 'Hints Not Found', 'hints-not-found.inc')";
 	
 	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
@@ -1000,8 +1008,22 @@ try{
             (133, 'k91UNRymD0U', 'Cross-Site Scripting Explained - Part 3: Reflected XSS'),
             (134, 'I0SusAlT1wY', 'Cross-Site Scripting Explained - Part 4: Stored XSS'),
             (135, 'rR0SnARknlk', 'Cross-Site Request Forgery Explained - Part 1: Basic CSRF'),
-            (136, 'xBWqIh6wSz8', 'Cross-Site Request Forgery Explained - Part 2: Advanced CSRF')";
-	
+            (136, 'xBWqIh6wSz8', 'Cross-Site Request Forgery Explained - Part 2: Advanced CSRF'),
+	        (137, 'Cazzls2sZVk', 'How to Create Ubuntu Virtual Machine (VirtualBox)'),
+	        (138, '8VCeFRwRmRU', 'How to Install VirtualBox Guest Additions (Linux)'),
+	        (139, '33CAgRKztqU', 'How to Create Ubuntu Virtual Machine (VMware)'),
+	        (140, 'cZtkVOHRYts', 'LAMP Stack: Part 1 - How to Install Apache Web Server'),
+	        (141, 'Z6IhGGxJidM', 'LAMP Stack: Part 2 - How to Install PHP'),
+	        (142, 'PsfuaRySts4', 'LAMP Stack: Part 3 - How to Install MySQL Server'),
+	        (143, 'yHCUd_5A8vo', 'How to Reset Root Password in MySQL/MariaDB'),
+	        (144, 'TcUOaeL5SJU', 'How to Install PHP Curl Library'),
+	        (145, 'e37RtQEnUhU', 'How to Install PHP XML Library'),
+	        (146, 'ZNAmmiEQuCM', 'How to Install PHP mbstring Library'),
+	        (147, '0wIUci7s3gM', 'How to Display Errors in PHP Pages'),
+	        (148, 'TcgeRab7ayM', 'How to Install Mutillidae on Linux'),
+	        (149, 'sJd0ir9-jSc', 'How to Create Self-Signed Certificate in Apache'),
+	        (150, '79mOiU3GfnQ', 'How to Create Virtual Hosts in Apache')";
+
 	$lQueryResult = $MySQLHandler->executeQuery($lQueryString);
 	if (!$lQueryResult) {
 		$lErrorDetected = TRUE;

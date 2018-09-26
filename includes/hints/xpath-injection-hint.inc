@@ -1,6 +1,8 @@
 <br/><br/>
 <span class="report-header">Overview</span>
 <br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
+<br/><br/>
 XPath Injection may result when an application uses
 user input to form an XPath query string, then passes that
 query string to an XPath search.
@@ -30,7 +32,7 @@ Try this example in the username field
 	admin&apos; or &apos;1&apos; = &apos;1
 </code>	
 <br/><br/>
-<span class="report-header">Videos</span>
-<br/><br/>
+<span id="videos" class="report-header">Videos</span>
+<br/>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->IntroductiontoXPathInjection);?>
 <br/><br/>

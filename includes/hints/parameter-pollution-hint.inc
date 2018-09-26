@@ -7,6 +7,8 @@
 	forbids passing multiple parameters with the same name. Web application servers will 
 	sometimes take the first parameter, the second parameter, or concatenate both together.
 	This can allow an attacker to poison the input.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 	<br/><br/>
 	<span class="report-header">Discovery Methodology</span>
 	<br/><br/>
@@ -36,7 +38,7 @@
 	a second "choice" parameter in the GET. Note which choice parameter is actually processed. Is it the correct
 	parameter or the injected parameter?  
 	<br/><br/>
-	<span class="report-header">Videos</span>
+	<span id="videos" class="report-header">Videos</span>
 	<br/><br/>
 	<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->IntroductiontoHTTPParameterPollution);?>
 	<br/><br/>

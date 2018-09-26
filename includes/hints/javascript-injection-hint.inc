@@ -8,6 +8,8 @@
 			break out of the current context and switch to another context. 
 			Alternatively
 			an injection may stay in the current context but modify the source code.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			"Context" is the type of code and object into which the injection occurs.
 			For Javascript injection, this is often the value of a Javascript string
@@ -70,7 +72,7 @@
 	canary";}catch(e){}alert(1);try{a="
 </code>
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->IntroductiontoCrossSiteScriptingXSSviaJavaScriptStringInjection);?>
 			<br/><br/>

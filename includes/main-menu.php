@@ -732,20 +732,12 @@
 		<li style="border-color: #ffffff;border-style: solid;border-width: 1px;">
 			<a href="">Documentation</a>
 			<ul>
+				<li><a href="index.php?page=documentation/installation.php">Installation Instructions (Linux)</a></li>
+				<li><a href="documentation/mutillidae-installation-on-xampp-win7.pdf" target="_blank">Installation Instructions (Windows)</a></li>
 				<li><a href="index.php?page=documentation/usage-instructions.php">Usage Instructions</a></li>
-				<li><a href="index.php?page=documentation/setting-up-ssl.php">Setting Up HTTPS</a></li>
-				<li><a href="index.php?page=documentation/setting-up-virtual-hosts.php">Setting Up Virtual Hosts</a></li>
-				<li><a href="index.php?page=documentation/setting-up-local-hostname.php">Setting Up Local Hostname</a></li>
+				<li><a href="index.php?page=documentation/vulnerabilities.php">Listing of Vulnerabilities</a></li>
 				<li><a href="index.php?page=documentation/change-log.html">Change Log</a></li>
 				<li><a href="index.php?page=credits.php">Credits</a></li>
-				<li>
-					<a href="index.php?page=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">
-						How to Access Mutillidae over Virtual Box "Host Only" Network
-					</a>
-				</li>
-				<li><a href="index.php?page=installation.php">Installation Instructions</a></li>
-				<li><a href="./documentation/mutillidae-installation-on-xampp-win7.pdf" target="_blank">Installation Instructions: Windows 7 (PDF)</a></li>
-				<li><a href="index.php?page=documentation/vulnerabilities.php">Listing of Vulnerabilities</a></li>
 				<li>
 					<a href="https://www.sans.org/reading-room/whitepapers/application/introduction-owasp-mutillidae-ii-web-pen-test-training-environment-34380" target="_blank">
 						Whitepaper: Introduction to OWASP Mutillidae II Web Pen Test Training Environment
@@ -776,13 +768,7 @@
 						Professional Web Application Developer Quality Assurance Pack
 					</a>
 				</li>
-				<li>
-					<a href="http://samurai.inguardians.com/" target="_blank">
-						Samurai Web Testing Framework
-					</a>
-				</li>
 			</ul>
 		</li>
 	</ul>
-	<!-- <br style="clear: left" />  -->
 </div>

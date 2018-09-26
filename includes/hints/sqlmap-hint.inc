@@ -9,6 +9,8 @@
 			process of detecting and exploiting SQL injection flaws. It is 
 			widely considered the best open-source SQL injection testing tool 
 			available.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Running SQLMAP Help</span>
 			<br/><br/>	
@@ -328,7 +330,7 @@ netsh firewall add portopening protocol=TCP port=23 name=telnet mode=enable scop
 	sqlmap -d mysql://root:&quot;&quot;@192.168.56.102:5123/nowasp
 </span>
 <br/><br/>
-<span class="report-header">Videos</span>
+<span id="videos" class="report-header">Videos</span>
 <br/><br/>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->AutomateSQLInjectionusingsqlmap);?>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->BasicsofSQLInjectionTimingAttacks);?>

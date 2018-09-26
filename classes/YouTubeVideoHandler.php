@@ -173,7 +173,21 @@ class YouTubeVideoHandler {
 	public $CrossSiteScriptingExplainedPart4StoredXSS = 134;
 	public $CrossSiteRequestForgeryExplainedPart1BasicCSRF = 135;
 	public $CrossSiteRequestForgeryExplainedPart2AdvancedCSRF = 136;
-	
+	public $HowtoCreateUbuntuVirtualMachineVirtualBox = 137;
+	public $HowtoInstallVirtualBoxGuestAdditionsLinux = 138;
+	public $HowtoCreateUbuntuVirtualMachineVMware = 139;
+	public $LAMPStackPart1HowtoInstallApacheWebServer = 140;
+	public $LAMPStackPart2HowtoInstallPHP = 141;
+	public $LAMPStackPart3HowtoInstallMySQLServer = 142;
+	public $HowtoResetRootPasswordinMySQLMariaDB = 143;
+	public $HowtoInstallPHPCurlLibrary = 144;
+	public $HowtoInstallPHPXMLLibrary = 145;
+	public $HowtoInstallPHPmbstringLibrary = 146;
+	public $HowtoDisplayErrorsinPHPPages = 147;
+	public $HowtoInstallMutillidaeonLinux = 148;
+	public $HowtoCreateSelfSignedCertificateinApache = 149;
+	public $HowtoCreateVirtualHostsinApache = 150;
+
 	/* private methods */
 	private function doSetSecurityLevel($pSecurityLevel){
 		$this->mSecurityLevel = $pSecurityLevel;
@@ -301,7 +315,11 @@ class YouTubeVideoHandler {
 			//if($this->mYouTubeIsReachable){
 				//$lHTML .= $this->generateYouTubeFrameHTML($lVideoIdentificationToken);
 			//}else {
-				$lHTML .= '<br/><a href="https://www.youtube.com/watch?v='.$lVideoIdentificationToken.'" target="_blank"><span style="color:black;">Click here to watch</span> <span class="label">'.$lVideoTitle.'</span></a>';
+				$lHTML .= '<br/><a href="https://www.youtube.com/watch?v='.
+				$lVideoIdentificationToken.
+				'" target="_blank"><img style="margin-right: 5px;" src="images/youtube-play-icon-40-40.png" alt="YouTube" /><span class="label">'.
+				$lVideoTitle.
+				'</span></a>';
 			//}// end if
 
 		} catch (Exception $e) {

@@ -8,6 +8,8 @@
 			using routines (i.e. - stored procedures, user-defined functions) may be
 			vulnerable. Some sites attempt to parameterize queries which prevents
 			SQL injection but fails to meet other objectives such as least-privilege.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>
@@ -435,7 +437,7 @@
 	<li>For this particular query the following solution will work: ' or 5=5-- . There is a space at the end.</li>
 </ul>
 <br/>
-<span class="report-header">Videos</span>
+<span id="videos" class="report-header">Videos</span>
 <br/><br/>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->SQLInjectionExplainedPart1TheBasics);?>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->SQLInjectionExplainedPart2Tautologies);?>

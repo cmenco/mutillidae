@@ -1,8 +1,14 @@
-<div class="page-title">Setting up Virtual Hosts in Apache2 on Ubuntu</div>
-
-<div>&nbsp;</div>
+<br/><br/>
+<span class="report-header">Overview</span>
+<br/><br/>
+Virtual hosts allow us to run more than one web site on the same IP address. While not appropriate for 
+production environments, name-based vulnerable hosts work well for providing production-like sites in 
+isolated lab environments; especially those running only locally.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
+<br/><br/>
 <span class="report-header">Creating Virtual Hosts</span>
-<div>&nbsp;</div>
+<br/><br/>
 <pre>
 Virtual hosts can be used to allow both HTTP and HTTPS sites for the same application. 
 An example of a possible configuration is below. This example limits mutillidae to running 
@@ -117,4 +123,8 @@ The resulting /etc/hosts file might look something like this
     127.0.0.1	mutillidae.local
     127.0.0.1	mutillidae
 </pre>
-
+<br/>
+<span id="videos" class="report-header">Videos</span>
+<br/>
+<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoCreateVirtualHostsinApache);?>
+<br/><br/>

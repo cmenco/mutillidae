@@ -4,6 +4,8 @@
 			Platform Path Disclosure may result when internal system paths 
 			are disclosed to the user-agent (browser). These paths can be
 			used in other attacks such as directory browsing.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>

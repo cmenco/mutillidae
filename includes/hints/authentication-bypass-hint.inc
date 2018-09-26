@@ -4,6 +4,8 @@
 			Authentication Bypass is generally custom for each web application
 			which possesses the vulnerability. However, there are some common
 			abuse case patterns.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>
@@ -93,7 +95,7 @@ Password: whatever
 			<br/><br/>
 			<a href="index.php?page=user-agent-impersonation.php">User-Agent Impersonation</a>
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
             <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoCreateWordlistsfromWebSitesusingCEWL);?>
             <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->BruteForceAuthenticationusingBurpIntruder);?>

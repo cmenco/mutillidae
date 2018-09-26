@@ -6,6 +6,8 @@
 			without being encoded into the web server response. In other words, the attacker
 			can send input which later is incorporated into the web page the user receives.
 			<br/><br/>
+			<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
+			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>
 			Inject all available parameters of the web page with a searchable string
@@ -135,7 +137,7 @@
 			including but not limited to database records and all parameters 
 			submitted by the browser.
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->IntroductiontoHTMLInjectionHTMLiandCrossSiteScriptingXSSUsingMutillidae);?>
 			<br/><br/>

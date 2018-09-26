@@ -10,6 +10,8 @@ created and sent by a malicious script running in the users browser. As far as
 the target site can tell, the user submitted the request by using the web site
 in the expected way.
 <br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
+<br/><br/>
 <span class="report-header">Discovery Methodology</span>
 <br/><br/>
 Look for pages that appear to execute system commands like ping, nslookup, traceroute or CGI scripts
@@ -176,7 +178,7 @@ Cover Tracks: Clear logs
 	Windows XP: &amp;&amp; wevtutil cl
 		</span>			
 <br/><br/>
-<span class="report-header">Videos</span>
+<span id="videos" class="report-header">Videos</span>
 <br/><br/>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->CommandInjectionExplainedPart1TheBasics);?>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->CommandInjectionExplainedPart2Discovery);?>

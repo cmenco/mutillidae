@@ -15,6 +15,8 @@
 			case of a link tag, the &quot;href&quot; attribute specifies the path
 			of the include file. For script tags the &quot;src&quot; attribute does the 
 			same.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			Links can be &quot;relative&quot; or &quot;absolute&quot;. Absolute links
 			specify the full path to the resource file. An example would be
@@ -252,7 +254,7 @@
 			production database data; ever. Developers should not be able to copy 
 			their own code into production; ever. That is what change control is for.
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>			
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->IntroductiontoPathRelativeStyleSheetInjection);?>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HackingWebAppswithStylePathRelativeStyleSheetInjection);?>

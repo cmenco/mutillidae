@@ -4,6 +4,8 @@
 	The Robot Exclusion Standard, Robots Exclusion Protocol or robots.txt protocol is a 
 	suggestion for "honest" browsers which should prevent web crawlers 
 	from accessing the parts of a website listed in the roboos.txt file.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 	<br/><br/>
 	<span class="report-header">Discovery Methodology</span>
 	<br/><br/>
@@ -32,7 +34,7 @@ nmap -p 80,443 -v -Pn --script=http-robots.txt --open -iL hosts.txt
 	Robots.txt is located at http://[server]/mutillidae/robots.txt with default installation. On Samurai
 	WTF the path will be http://mutillidae/robots.txt.
 	<br/><br/>
-	<span class="report-header">Videos</span>
+	<span id="videos" class="report-header">Videos</span>
 	<br/><br/>
 	<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtograbrobotstxtfilewithCURL);?>
 	<br/><br/>

@@ -9,6 +9,8 @@
 		  	of the variable. An unsigned byte can hold the number 255, but the number 256 will
 		  	either cause an error, be cast to a different representation, or "roll" the 
 		  	variable back to zero.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>

@@ -6,6 +6,8 @@
 			invisible form. When the user clicks on what they think is the legitimate web
 			page, they are interacting with the overlay instead. If the overlay happens to
 			be a form (for example), the user is filling out and submitting the fake form.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>

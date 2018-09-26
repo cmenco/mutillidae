@@ -5,6 +5,8 @@
 			may disable Javascript entirely or fill in values which legitimately 
 			pass validation then alter those values in a client proxy such as
 			Burp Suite after the validation has occured.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>
@@ -20,7 +22,7 @@
 			in a client proxy such as
 			Burp Suite after the validation has occured.
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->TwoMethodstoBypassJavaScriptValidation);?>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->XSSbypassingJavaScriptValidation);?>

@@ -9,6 +9,8 @@
 			relocating to a URL after allowing the browser to send the URL
 			as a parameter value or including an include file based on the
 			browser sending the include file path and name.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>
@@ -34,7 +36,6 @@
 			file to load within the main frame. Since this parameter loads any
 			file passed, attempt to pass a local file or remote file URI.
 			<br/><br/>
-			<br/><br/>
 			<span class="report-header">Example: Accessing system files</span>
 			<br/><br/>
 			Step 1: Recon: Obtain list of files<br/><br/>
@@ -56,7 +57,7 @@
 			Field: phpfile<br/>
 			Value: &lt;system file path&gt;, ../../../boot.ini, ..\..\..\WINDOW\System32\drivers\etc\hosts, ../../../etc/passwd
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->IntroductiontoFuzzingWebApplicationswithBurpSuiteIntruderTool);?>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoExploitLocalFileInclusionVulnerabilityusingBurpSuite);?>

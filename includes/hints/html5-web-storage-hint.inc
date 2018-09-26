@@ -4,6 +4,8 @@
 			HTML5 web storage is a simple database implemented by browsers
 			which allows web pages to store records. Records are key-value pairs.
 			Both the key and the value are of datatype string. 
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">HTML5 Storage API</span>
 			<br/><br/>
@@ -407,7 +409,7 @@ try{
 				</textarea>
 			</fieldset>
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->AddingValuestoDOMStorageusingCrosssiteScripting);?>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->AlterValuesinHTML5WebStorageusingCrosssiteScript);?>

@@ -112,9 +112,9 @@
 					<td class="label" style="padding-right:30px;" title="Installation Instructions">
 						<ul>
 							<li><a title="Latest Version" href="http://sourceforge.net/projects/mutillidae/files/mutillidae-project/" target="_blank">Latest Version</a></li>
-							<li><a title="Installation Instructions" href="./index.php?page=installation.php">Installation Instructions</a></li>
-							<li><a title="Usage Instructions" href="./index.php?page=documentation/usage-instructions.php">Usage Instructions</a></li>
-							<li><a title="Get rid of those pesky PHP errors" href="./index.php?page=php-errors.php">Get rid of those pesky PHP errors</a></li>		
+							<li><a title="Installation Instructions" href="index.php?page=documentation/installation.php">Installation Instructions</a></li>
+							<li><a title="Usage Instructions" href="index.php?page=documentation/usage-instructions.php">Usage Instructions</a></li>
+							<li><a title="Get rid of those pesky PHP errors" href="index.php?page=php-errors.php">Get rid of those pesky PHP errors</a></li>		
 						</ul>			
 					</td>
 				</tr>

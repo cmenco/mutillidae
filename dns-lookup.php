@@ -165,7 +165,8 @@
 </form>
 
 <?php
-	if ($lFormSubmitted){
+/* Output results of shell command sent to operating system */
+if ($lFormSubmitted){
 	    try{
 	    	if ($lTargetHostValidated){
 	    		echo '<div class="report-header" ReflectedXSSExecutionPoint="1">Results for '.$lTargetHostText.'</div>';

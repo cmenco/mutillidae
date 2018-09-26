@@ -5,6 +5,8 @@ Information Disclosure may result when internal information is
 disclosed to the user-agent (browser). These paths can be
 used in other attacks.
 <br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
+<br/><br/>
 <span class="report-header">Discovery Methodology</span>
 <br/><br/>
 Attempt to discover if it is possible to cause errors by injecting
@@ -22,7 +24,7 @@ Burp-Suite to seach for inappropriate information. Search for known
 common administrative consoles such as phpMyAdmin installations,
 Drupal and Wordpress consoles.
 <br/><br/>
-<span class="report-header">Videos</span>
+<span id="videos" class="report-header">Videos</span>
 <br/><br/>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtograbrobotstxtfilewithCURL);?>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtolistHTTPMethodswithCURL);?>

@@ -10,6 +10,8 @@
 			Because of the lack of proper encoding, the browser will execute the script rather than display it as data.
 			Pages that encode all dynamic output are generally immune. The page will simply display the script as text
 			rather than execute the script as code.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>
@@ -320,7 +322,7 @@ for(i=0;i&lt;s.length;i++){var lKey = s.key(i);m += lKey + &quot;=&quot; + s.get
 			production database data; ever. Developers should not be able to copy 
 			their own code into production; ever. That is what change control is for.
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>			
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->CrossSiteScriptingExplainedPart1TheBasics);?>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->CrossSiteScriptingExplainedPart2DOMBasedXSS);?>

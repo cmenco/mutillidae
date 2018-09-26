@@ -6,6 +6,8 @@
 			It may be possible to upload mallicious files and/or files containing
 			shell code. Denial of service attacks may also occur if the available
 			storage space is filled to capacity.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>
@@ -489,7 +491,7 @@ echo rtrim($padding . $_SESSION[&#39;output&#39;]);
 &lt;/html&gt;
 </code>
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->ISSA2013WebPentestingWorkshopPart6LocalRemoteFileInclusion);?>
 			<br/><br/>

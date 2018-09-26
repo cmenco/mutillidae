@@ -5,8 +5,10 @@ OWASP Zed Attack Poxy (ZAP) is an interception proxy geared towards web applicat
 vulnerability assessment and penetration testing. A series of videos
 is provided below to help get started with Burp-Suite.
 <br/><br/>
-<span class="report-header">Videos</span>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 <br/><br/>
+<span id="videos" class="report-header">Videos</span>
+<br/>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoInstallOWASPZaponLinux);?>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoInstallandConfigureFoxyProxywithFirefox);?>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoSpideraWebSitewithOWASPZAP);?>

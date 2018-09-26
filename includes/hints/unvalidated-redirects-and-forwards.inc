@@ -7,6 +7,8 @@
 		  	vulnerable page will cause the user to be redirected to the URL
 		  	Unvalidated redirects can make the job of Phishers easier 
 		  	since the URL can be made to look like part of a trusted site. 
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>
@@ -64,7 +66,7 @@
 	http://localhost/mutillidae/index.php?page=redirectandlog.php&amp;forwardurl=http://localhost/mutillidae/capture-data.php
 </code>
 <br/><br/>
-<span class="report-header">Videos</span>
+<span id="videos" class="report-header">Videos</span>
 <br/><br/>
 <?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->IntroductiontoUnvalidatedRedirectsandForwards);?>
 <br/><br/>

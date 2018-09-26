@@ -3,6 +3,8 @@
 			<br/><br/>
 			Applications may contain comments within the client-side source code. Common
 			locations include HTML and JavaScript comments.
+<br/><br/>
+<a href="#videos" class="label"><img alt="YouTube" src="/images/youtube-48-48.png" style="margin-right: 10px;" />Video Tutorials</a>
 			<br/><br/>
 			<span class="report-header">Discovery Methodology</span>
 			<br/><br/>
@@ -41,7 +43,7 @@ nmap -p 80,443 -v -Pn --script=http-comments-displayer --open -iL hosts.txt
 			<a href="index.php?page=home.php">Home</a> page. View the page source
 			to see comments.
 			<br/><br/>
-			<span class="report-header">Videos</span>
+			<span id="videos" class="report-header">Videos</span>
 			<br/><br/>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtouseWGETtocloneaWebSite);?>
 			<?php echo $YouTubeVideoHandler->getYouTubeVideo($YouTubeVideoHandler->HowtoSweepaWebSiteforHTMLComments);?>
